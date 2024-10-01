@@ -1,15 +1,25 @@
-# Demonstrção de funções em listas...
-NUMEROS = [7, 2, 9, 6, 5, 0, 3, 8, 1, 4]
-PALAVRAS = ['Ola', 'Alo', 'Hei', 'Uau', 'ops']
+# demonstração de metodos em listas...
+INSS = ['Maria', 'Manoel', 'José', 'Isabela']
+print('Eis, a fila do inss:', INSS)
 
-print('Quantas variaveis possui:')
-print('Numeros:', len(NUMEROS))
-print('Palavras:', len(PALAVRAS))
+NOVO = input('Insira mais uma pessoa:')
+INSS.append(NOVO)
+print('Converindo a nova lista:', INSS)
 
-print('Vamos reordena estas listas?')
-print(sorted(NUMEROS))
-print(sorted(PALAVRAS))
+print('Vouu tirar a ultima pessoa desta lista...')
+ESPECIAL = INSS.pop()
 
-print('O somatorio de numeros:', sum(NUMEROS))
-print('Qual é o maior valor?', max(NUMEROS))
-print('Qual é a primeira palavra?', min(PALAVRAS))
+print('Agora, vou coloca-la na frente de todos!')
+INSS.insert(0, ESPECIAL)
+print('Conferindo a lista:', INSS)
+
+print('Maria não gostou e reclamou...')
+INSS.remove('Maria')
+print('E agora, ela ficou pe da vida: ', INSS)
+
+print('Para não ter mais reclamação, vamos atender...')
+INSS.sort()
+print('... em ordem alfabetica:', INSS)
+
+print('Onde esta esta pessoa chamada', ESPECIAL, '?')
+print('Ela agora ficou na posição', INSS.index (ESPECIAL)+1, '!')

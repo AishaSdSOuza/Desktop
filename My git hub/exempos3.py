@@ -11,7 +11,7 @@ for X in SONHOS:
 print('Ops, não quero Sepetiba!')
 del(SONHOS[1])
 print('E nem WestShopping...')
-del(SONHOS[3])
+del(SONHOS[2])
 
 print('Conferindo os sonhos...')
 for X in SONHOS:

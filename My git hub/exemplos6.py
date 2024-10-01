@@ -1,25 +1,17 @@
-# demonstração de metodos em listas...
-INSS = ['Maria', 'Manoel', 'José', 'Isabela']
-print('Eis, a fila do inss:', INSS)
+# Demonstração do comportamento das listas 
+print('Vou almoçar em um restaurante a quilo!')
 
-NOVO = input('Insira mais uma pessoa:')
-INSS.append(NOVO)
-print('Converindo a nova lista:', INSS)
+ORIGINAL = ['Arroz','Feijão', 'Batata', 'Alface', 'Frango']
+print('Eis, a minha comida:', ORIGINAL)
+DERIVADA = ORIGINAL
+print('Meu amigo ira comer também:', DERIVADA)
 
-print('Vouu tirar a ultima pessoa desta lista...')
-ESPECIAL = INSS.pop()
+print('Vou alterar as opções sem ele ver...')
+ORIGINAL.remove('Arroz')
+ORIGINAL.remove('Feijão')
+ORIGINAL.remove('Alface')
+ORIGINAL.append('picanha')
+ORIGINAL.append('linguiça')
 
-print('Agora, vou coloca-la na frente de todos!')
-INSS.insert(0, ESPECIAL)
-print('Conferindo a lista:', INSS)
-
-print('Maria não gostou e reclamou...')
-INSS.remove('Maria')
-print('E agora, ela ficou pe da vida: ', INSS)
-
-print('Para não ter mais reclamação, vamos atender...')
-INSS.sort()
-print('... em ordem alfabetica:', INSS)
-
-print('Onde esta esta pessoa chamada', ESPECIAL, '?')
-print('Ela agora ficou na posição', INSS.index (ESPECIAL)+1, '!')
+print('Amiguinho,me mostre o que voce vai comer?')
+print('Claro! Da uma conferida', DERIVADA)
